@@ -25,20 +25,38 @@ For this challenge, I containerized a NodeJS application and set up NGINX as a r
 
 Detailed steps and code can be found in the `challenge2` directory.
 
-## Reflections and Learnings
+Challenge 3: Full-stack Application
+This challenge involved setting up a full-stack application using Docker Compose, integrating a Node.js application, an NGINX web server, and a MariaDB database. The main steps included:
+Creating a .env file to manage environment variables for the database and application.
+Setting up a docker-compose.yml file to manage the Node.js, NGINX, and MariaDB services.
+Configuring the database initialization to ensure the necessary tables are created.
+Testing the setup to ensure the application endpoints are accessible and functioning correctly.
+Detailed steps and code can be found in the challenge3 directory.
 
+
+Challenge 4: Scaling up an Application
+In this challenge, I scaled the Node.js service from one instance to three instances using Docker Compose. The key steps were:
+Modifying the docker-compose.yml file to remove host port mapping for the Node.js service.
+Configuring NGINX as a load balancer to distribute requests across multiple Node.js instances.
+Using Docker Compose to scale the Node.js service to three instances.
+Testing the setup to ensure load balancing is working and requests are distributed across instances.
+Detailed steps and code can be found in the challenge4 directory.
+
+
+Reflections and Learnings
 Throughout these challenges, I gained valuable experience in:
-
-- Containerizing applications using Docker
-- Using Docker Compose for multi-container applications
-- Configuring NGINX for both static file serving and as a reverse proxy
-- Troubleshooting container networking issues
-- Best practices for Dockerfile creation and Docker Compose configuration
-
+Containerizing applications using Docker
+Using Docker Compose for multi-container applications
+Configuring NGINX for both static file serving and as a reverse proxy
+Scaling services with Docker Compose and configuring load balancing
+Troubleshooting container networking issues
+Best practices for Dockerfile creation and Docker Compose configuration
 These skills will be invaluable for future projects involving containerized applications and microservices architectures.
 
-## References
 
-- [Docker Documentation](https://docs.docker.com/)
-- [NGINX Documentation](https://nginx.org/en/docs/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
+References
+Docker Documentation
+NGINX Documentation
+Node.js Documentation
+MariaDB Docker Hub
+Feel free to customize this README further based on your specific experiences and any additional insights you gained during the challenges.
